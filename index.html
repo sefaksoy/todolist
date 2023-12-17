@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar bg-dark">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1 text-white">To Do List</span>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+
+        <!-- Create Task Start -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card w-100">
+                    <div class="card-header">
+                        <h2 class="card-title fw-bold">Create Task</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row" id="createTaskRow">
+                            <div class="col-8">
+                                <input type="text" name="" id="newTaskName" placeholder="New Task Name"
+                                    class="form-control">
+                            </div>
+                            <div class="col-4">
+                                <a href="javascript:void(0)" class="btn btn-success w-100" id="btnAddTaskList">Add Task
+                                    List <span class="gizle">Test</span><i class="fa fa-plus ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Create Task End -->
+
+                <!-- Task List Start -->
+                <div class="card w-100 mt-5">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col-3">
+                                <h2 class="card-title fw-bold mb-0">Task List</h5>
+                            </div>
+                            <div class="col-3"><a href="javascript:void(0)" class="btn btn-success w-100"
+                                    id="btnCompletedTask">Tamamlandı</a></div>
+                            <div class="col-3"><a href="javascript:void(0)" class="btn btn-danger w-100"
+                                    id="btnRemoveTask">Listeden Çıkar</a></div>
+                            <div class="col-3"><a href="javascript:void(0)" class="btn btn-primary w-100"
+                                    id="btnSelectAll">Tümünü Seç</a></div>
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <ul class="list-group p-3" id="taskListUl">
+
+                                <!-- <li class="list-group-item task-list-item" id="">
+                                    <input type="checkbox" class="select-task me-3 select-task" name="" id="selectTask1">
+                                    <label for="selectTask1">lorem ipsum</label>
+                                    <i class="fa fa-2x fa-trash text-primary float-end"></i>
+                                </li>
+
+                                <li class="list-group-item task-list-item">
+                                    <input type="checkbox" class="select-task me-3 select-task" name="" id="selectTask2">
+                                    <label for="selectTask2">lorem ipsum</label>
+                                    <i class="fa fa-2x fa-trash text-primary float-end"></i>
+                                </li>
+
+                                <li class="list-group-item task-list-item">
+                                    <input type="checkbox" class="select-task me-3 select-task" name="" id="selectTask3">
+                                    <label for="selectTask3">lorem ipsum</label>
+                                    <i class="fa fa-2x fa-trash text-primary float-end"></i>
+                                </li>
+
+                                <li class="list-group-item task-list-item">
+                                    <input type="checkbox" class="select-task me-3 select-task" name="" id="selectTask4">
+                                    <label for="selectTask4">lorem ipsum</label>
+                                    <i class="fa fa-2x fa-trash text-primary float-end"></i>
+                                </li> -->
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Task List End -->
+
+                <!-- Completed Task Start -->
+                <div class="card w-100 mt-5">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col">
+                                <h2 class="card-title fw-bold mb-0">Completed Tasks</h5>
+                            </div>
+                            <div class="col"><a href="javascript:void(0)" class="btn btn-warning w-100" id="btnClearList">Clear List</a></div>
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <ul class="list-group p-3" id="completedListUI">
+
+                                <!-- <li class="list-group-item task-list-item px-3">
+                                    <label>lorem ipsum</label>
+                                </li>
+
+                                <li class="list-group-item task-list-item px-3">
+                                    <label>lorem ipsum</label>
+                                </li>
+
+                                <li class="list-group-item task-list-item px-3">
+                                    <label>lorem ipsum</label>
+                                </li>
+
+                                <li class="list-group-item task-list-item px-3">
+                                    <label>lorem ipsum</label>
+                                </li> -->
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Completed Task End -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto py-3 bg-dark fixed-bottom ">
+        <div class="container">
+            <p class="m-0 text-white text-center"> &copy; Sefa Aksoy 2023</p>
+        </div>
+      </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

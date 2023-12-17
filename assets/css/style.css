@@ -1,0 +1,17 @@
+.task-list-item
+{
+    background-color: #929292;
+    height: 60px;
+}
+.task-list-item:last-child{
+ border-bottom: inherit;   
+}
+
+.trashed
+{
+    line-height: 60px;
+}
+.gizle
+{
+    display: none;
+}
